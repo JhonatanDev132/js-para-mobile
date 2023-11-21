@@ -18,18 +18,10 @@ function exemplo2(){
     console.log("Função nomeada!");
 }
 
-let guardaValor = (valor1, valor2) => {
-    // if(valor1 < valor2){
-    //     let oto = valor1;
-    //     valor1 = valor2;
-    //     valor2 = oto;
-    // }
-    let calculo = valor1 - valor2;
-    return calculo;
-};
+let calculaDiferenca = (valor1, valor2) => calculo = valor1 - valor2;
 
-let resultado1 = guardaValor(50, 90);
-let resultado2 = guardaValor(70, 50);
+let resultado1 = calculaDiferenca(50, 90);
+let resultado2 = calculaDiferenca(70, 50);
 
 console.log(resultado1, resultado2);
 
@@ -55,12 +47,31 @@ const saudacao = cliente => console.log("Olá " + cliente);
 saudacao("Fulano");
 saudacao("Beltrano");
 
-const calcularMetade = (valor) => {
+// Arrow function ocm retorno EXPLÍCITO
+const calcularMetadeOriginal = (valor) => {
     return valor / 2;
 };
 
-let resultadoA = calcularMetade(100);
+// Arrow Function com retorno IMPLÍCITO
+const calcularMetade = valor => valor / 2;
+
+let resultadoA = calcularMetadeOriginal(100);
 let resultadoB = calcularMetade(999);
 
 console.log(resultadoA);
 console.log(resultadoB);
+
+console.log("------------------------------------------");
+
+/* Exercícios
+1) Monte uma arrow Function que receba o nome de uma pessoa
+e converta este nome para letras maiúsculas. */ 
+const converteMaiuscula = nome => console.log(nome.toUpperCase());
+
+/*
+2) Chame a função 3x (passando nomes diferentes) e exibindo
+no console os resultados.*/
+converteMaiuscula("Jhonatan");
+converteMaiuscula("Júlia");
+converteMaiuscula("Dom");
+ 
