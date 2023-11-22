@@ -7,3 +7,20 @@ const maisBandas = [...bandas, "Slayer", "Nirvana"];
 
 console.log(bandas);
 console.log(maisBandas);
+
+// Spread com objetos
+const cliente = {
+    nome: "Seu Madruga",
+    idade: 55,
+    cidade: "Vila do Chaves"
+};
+
+const novosDados = {
+    ...cliente,
+    estado: "SP",
+    pedido: "123xyz",
+    total: 5000.88,
+    idade: 60
+}
+
+console.log(novosDados);
