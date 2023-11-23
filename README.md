@@ -43,3 +43,6 @@ Ao importar apenas **um recurso**, utiliza-se `import nomeDoRecurso from "local/
 
 - rest(coletar/extrair valores): usado para gerar uma lista de parâmetros para uma função à partir dos valores de um array. Útil para evitar a necessidade de criar parâmetros manualmente em uma função, ou para quando não sabemos quantos parâmetros necessários.
 
+### Desestruturing (Desestruturação)
+
+Técnica para extrair valores de arras e objetos para novas variáveis/constantes. Usada para simplificar o acesso a estes dados, podendo ser aplicada também em parâmetros de funções
