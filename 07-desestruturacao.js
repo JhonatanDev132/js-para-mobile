@@ -49,3 +49,46 @@ for(const produto of produtos){
 console.log(converter("Tiago"));
 console.log(converter("geladeira"));
 console.log(converter(produtos[0]));
+
+console.log("===============================");
+
+// Destruturing em objetos
+const pessoa = {
+    nome: "Andre",
+    idade: 19,
+    bairro: "Penha",
+    situacao: "crítica"
+};
+
+const {nome, idade, bairro, situacao} = pessoa;
+
+console.log(`O aluno ${nome} está em situação ${situacao} no curso.`);
+console.log(`Mora na ${bairro} e mesmo assim sempre atrasa... :(`);
+
+const { codigo: pedido, cursos, preco } = {
+    codigo: "123abc", cursos: ["Figma", "Node.JS"], preco: 1000
+};
+
+console.log(pedido);
+console.log(cursos);
+console.log(preco);
+
+console.log("===============================");
+
+// Destruturing para parâmetros de função
+function exibirDados(objeto) {
+    console.log(`Filme: ${objeto.titulo} - Ano de lançamento: ${objeto.ano} `);
+}
+
+const filme1 = {
+    titulo: "Vingadores",
+    ano: 2012
+};
+
+const filme2 = {
+    titulo: "Barbie",
+    ano: 2023
+}; 
+
+exibirDados(filme1);
+exibirDados(filme2)
