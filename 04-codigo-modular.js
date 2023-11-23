@@ -33,3 +33,4 @@ let preco3 = 500.8452;
 console.log( minhasFuncoes.formataMoeda(preco1) );
 console.log( minhasFuncoes.formataMoeda(preco2) );
 console.log( minhasFuncoes.formataMoeda(preco3) );
+
